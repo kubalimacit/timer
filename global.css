@@ -1,0 +1,59 @@
+.help{
+	text-decoration:dotted underline;
+	cursor:help;
+}
+.nowrap{
+	white-space:nowrap;
+}
+.flag,.emoji{
+	font-family:Arial Unicode,Arial,Sans-Serif;
+}
+
+/*Used by dump()*/
+.dump{
+	color:#FFF;
+	background-color:#000;
+	font-family:Monospace;
+}
+.dump thead{
+	text-align:center;
+}
+.dump td{
+	padding:0.25em;
+}
+.dump-resource{
+	color:#FA0;
+}
+.dump-array-key{
+	color:#FF0;
+}
+.dump-array-type{
+	font-style:italic;
+	color:#F0F;
+}
+.dump-null,.dump-array-recursive{
+	color:#F00;
+}
+.dump-number{
+	color:#0FF;
+}
+.dump-string::before,.dump-string::after{
+	content:"\"";
+}
+.dump-string{
+	color:#0F0;
+}
+.dump-bool{
+	font-weight:bold;
+}
+.dump-bool-true{
+	color:#44F;
+}
+.dump-bool-false{
+	color:#F00;
+}
+
+/*Hide some elements when printing*/
+@media print{
+	.hidden-print{display:none;}
+}

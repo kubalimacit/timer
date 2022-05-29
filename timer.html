@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="pragma" content="no-cache" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="global.css" />
+		<script type="text/javascript" defer src="timer.js"></script>
+		<title>Geri Sayım Sayacı</title>
+	</head>
+	<body>
+		<div class="container"> 
+			<h1>Geri Sayım Sayacı</h1>
+			<noscript>
+				<div class="alert alert-danger">
+					 JavaScript aktif ediniz.
+				</div>
+			</noscript>
+			<div class="row">
+				<div class="col-sm-6" id="timers">
+					<h2 id="eventname"></h2>
+                    <br>
+					<h2><div id="timeleft"></div></h2>
+                    <br>
+					<div id="timeend"></div>
+				</div>
+				<div class="col-sm-7" id="settings">
+					<div class="row">
+						<div class="form-group col-sm-6">
+                            <br>
+							<label class="control-label">Etiket</label>
+							<input type="text" maxlength="50" class="form-control" />
+						</div>
+						<div class="form-group col-sm-6">
+                            <br>
+							<label class="control-label">Zaman</label>
+							<input type="datetime-local" class="form-control" step="1" />
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-sm-6">
+							<label class="control-label">
+								<input type="checkbox" /> Ayarları Gizle
+							</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-sm-12">
+							<input type="button" class="btn btn-info" value="Başlat" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
